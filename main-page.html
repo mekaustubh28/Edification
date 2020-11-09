@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE-Advanced 2020</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="icon" href="images/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="BODY">
+    <div style="display: flex;">
+        <div class="left" style="width: 80%;">
+            <div class="top-Nav">
+                <h2>JEE (Advanced) 2020</h2>
+            </div>
+            <div class="header">
+                <div style="margin-left: 20px;">
+                    <p>
+                        Sections:👇
+                    </p>
+                </div>
+                <div class="timerBox">
+                    <p>Time Left : <span>180:00</span>
+                    </p>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="section">
+                <li class="sec1">
+                    <a href="">Phy Sec 1</a>
+                </li>
+                <li class="sec2">
+                    <a href="">Phy Sec 2</a>
+                </li>
+                <li class="sec3">
+                    <a href="">Phy Sec 3</a>
+                </li>
+                <li class="sec4">
+                    <a href="">Chem Sec 1</a>
+                </li>
+                <li class="sec5">
+                    <a href="">Chem Sec 2</a>
+                </li>
+                <li class="sec6">
+                    <a href="">Chem Sec 3</a>
+                </li>
+                <li class="sec7">
+                    <a href="">Math Sec 1</a>
+                </li>
+                <li class="sec8">
+                    <a href="">Math Sec 2</a>
+                </li>
+                <li class="sec9">
+                    <a href="">Math Sec 3</a>
+                </li>
+            </div>
+            <hr class="line" style="margin-bottom: 0%;">
+            <div class="blank">
+                <p>View In:<strong> ENGLISH</strong> </p>
+            </div>
+            <div class="question" id="Question">
+                <p class="questionNo">
+                    Question No. <span>1</span>
+                </p>
+                <img src="images/section_1_1.JPG" id="sectionPattern" alt="instructions.jpg" width="80%">
+                <img src="images/questions/1.JPG" id="realQuestion" alt="QuestionNo1.jpg" width="60%">
+                <br>
+                <div class="optionClick">
+                    <input type="radio" id="option1" name="option" value="1">
+                    <label for="option1" style="font-size: 20px; margin-left: 1%;">A</label><br>
+                    <input type="radio" id="option2" name="option" value="2">
+                    <label for="option2" style="font-size: 20px; margin-left: 1%;">B</label><br>
+                    <input type="radio" id="option3" name="option" value="3">
+                    <label for="option3" style="font-size: 20px; margin-left: 1%;">C</label><br>
+                    <input type="radio" id="option4" name="option" value="4">
+                    <label for="option4" style="font-size: 20px; margin-left: 1%;">D</label><br>
+                </div>
+                <div class="keypadClick" style="display: none;">
+                    <input type="text" class="inputfield" id="ID">
+                    <div class="keypad">
+                        <button class="back green" onclick="backspace()">Backspace</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'7'">7</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'8'">8</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'9'">9</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'4'">4</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'5'">5</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'6'">6</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'1'">1</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'2'">2</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'3'">3</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'0'">0</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'.'">.</button>
+                        <button class="no" onclick="document.getElementById('ID').value=document.getElementById('ID').value+'-'">-</button>
+                        <button class="backward green"><-</button>
+                        <button class="forward green">-></button>
+                        <button class="clear green" onclick="document.getElementById('ID').value = ''">Clear All</button>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <div class="Footer">
+                <div class="btn-left">
+                    <button class="pointer" id="review">Mark for Review & Next</button>
+                    <button class="pointer" id="response">Clear Response</button>
+                </div>
+                <div class="btn-right" id="save-n-next">
+                    <button class="pointer">Save & Next</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right" style="width: 20%; border: 1px solid gray;">
+            <div class="links" style="background-color: rgb(143, 143, 252);">
+                <a href="instruction.html" target="_blank" onClick="window.open('instruction.html','pagename','resizable,height=600,width=1200'); return false;">Question Paper</a>
+                <a href="instruction.html" target="_blank" onClick="window.open('instruction.html','pagename','resizable,height=600,width=1200'); return false;">Instructions</a>
+            </div>
+            <div class="info" style="display: flex; background-color: rgb(240, 240, 247);">
+                <img src="images/mock_candidate.JPG" alt="mock_candidate.jpg" style="padding: 5px;">
+                <h3 style="color: rgb(37, 37, 37); margin-left: 20px;">John Smith</h3>
+            </div>
+            <div class="questioninfo">
+                <div class="quesType">
+                    <table>
+                        <tr>
+                            <th class="Answered design">
+                                <p>0</p>
+                            </th>
+                            <th> Answered</th>
+                            <th class="notAnswered design">
+                                <p>0</p>
+                            </th>
+                            <th>Not Answered</th>
+                        </tr>
+                        <tr>
+                            <th class="notVisited design">
+                                <p>0</p>
+                            </th>
+                            <th> Not Visited</th>
+                            <th class="Marked-for-Review design">
+                                <p>0</p>
+                            </th>
+                            <th>Marked for Review</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="questionNo" style="
+                background-color: rgb(105, 192, 221);">
+                    <h3>Phy Sec <span>1</span></h3>
+                </div>
+                <div class="quesPalette" style="background-color: rgb(199, 199, 250); margin: 0%;">
+                    <p style="margin-bottom: 20px;">Choose a Question</p>
+                    <div class="realques">
+                        <button class="1 btnques alternotVisited opacity pointer" value="1"> 
+                           1
+                        </button>
+                        <button class="2 btnques alternotVisited opacity pointer" value="2"> 
+                            2
+                         </button>
+                        <button class="3 btnques alternotVisited opacity pointer" value="3"> 
+                            3
+                         </button>
+                        <button class="4 btnques alternotVisited opacity pointer" value="4"> 
+                            4
+                         </button>
+                        <button class="5 btnques alternotVisited opacity pointer" value="5"> 
+                            5
+                         </button>
+                        <button class="6 btnques alternotVisited opacity pointer" value="6"> 
+                            6
+                         </button>
+                        <button class="7 btnques alternotVisited opacity pointer" value="7"> 
+                            7
+                         </button>
+                        <button class="8 btnques alternotVisited opacity pointer" value="8"> 
+                            8
+                         </button>
+                        <button class="9 btnques alternotVisited opacity pointer" value="9"> 
+                             9
+                          </button>
+                        <button class="10 btnques alternotVisited opacity pointer" value="10"> 
+                             10
+                          </button>
+                        <button class="11 btnques alternotVisited opacity pointer" value="11"> 
+                             11
+                          </button>
+                        <button class="12 btnques alternotVisited opacity pointer" value="12"> 
+                             12
+                          </button>
+                        <button class="13 btnques alternotVisited opacity pointer" value="13"> 
+                             13
+                          </button>
+                        <button class="14 btnques alternotVisited opacity pointer" value="14"> 
+                             14
+                          </button>
+                        <button class="15 btnques alternotVisited opacity pointer" value="15"> 
+                            15
+                         </button>
+                        <button class="16 btnques alternotVisited opacity pointer" value="16"> 
+                             16
+                          </button>
+                        <button class="17 btnques alternotVisited opacity pointer" value="17"> 
+                             17
+                          </button>
+                        <button class="18 btnques alternotVisited opacity pointer" value="18"> 
+                             18
+                          </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="Foote">
+                <div class="btn-right" style="text-align: center;">
+                    <button class="not-allowed" style="margin-top: 10px;" onclick="showResult()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="javascript/index.js "></script>
+    <script src="javascript/answer.js"></script>
+    <script src="js/jquery-3.5.1.min.js "></script>
+    <script src="js/tilt.min.js "></script>
+</body>
+
+</html>

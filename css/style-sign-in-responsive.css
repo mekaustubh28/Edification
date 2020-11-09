@@ -1,0 +1,21 @@
+@media screen and (max-width: 1202px) {
+    div input {
+        margin: 5px;
+    }
+    div.forgot {
+        line-height: 0.1;
+    }
+    div.logo {
+        left: 30%;
+    }
+    div.forgot {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:923px) {
+    div.right-top {
+        width: 100%;
+        left: 0;
+    }
+}

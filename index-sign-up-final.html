@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edification:Registration Confirmation</title>
+    <link rel="stylesheet" href="css/styles-sign-in.css" />
+    <link rel="stylesheet" href="css/style-sign-in-responsive.css">
+    <link rel="icon" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="top-container">
+        <div class="left-top">
+            <h1>
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Edification!", "Finishing Step to JEE.", "Main and Advanced Level Mock Test.", "Tips and Tricks and Much More.", "Thank you!!" ]'>
+                    <span class="wrap"></span>
+                </a>
+            </h1>
+        </div>
+        <img class="wave" src="images/graphic-3053767_1280s.png" alt="wave-img" />
+        <div class="right-top">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo-img" />
+            </div>
+            <div class="message">
+                <p>Thank you for using Edification.</p>
+                <p>Your Account is ready in few Moments.</p>
+                <p style="color: red;">
+                    A OTP has been send to your E-Mail and Mobile.
+                </p>
+                <h3 style="color: #00d1ff;">
+                    Please Enter the OTP for Confirmation.
+                </h3>
+            </div>
+            <div class="log-in">
+                <input type="number" name="roll-no." id="" placeholder="Roll No." disabled /><br />
+                <input type="number" name="number" id="" placeholder="Registerd Mobile No." disabled /><br />
+                <input type="number" name="number" id="" placeholder="Enter One Time Password/OTP." /><br />
+                <button type="button" id="myButton" class="button-submit">
+            Confirm
+          </button>
+                <br />
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function() {
+        location.href = "index.html";
+    };
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = "";
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) {
+            delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function() {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName("typewrite");
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute("data-type");
+            var period = elements[i].getAttribute("data-period");
+            if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML =
+            ".typewrite > .wrap { border-right: 0.08em solid #393e46}";
+        document.body.appendChild(css);
+    };
+</script>
+
+</html>

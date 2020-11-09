@@ -1,0 +1,595 @@
+html,
+body {
+    margin: 0%;
+    font-style: normal;
+    font-family: 'Comfortaa', cursive;
+    scroll-behavior: smooth;
+    margin-top: 0;
+}
+
+
+/* code for loader starts */
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff url('images/loader.gif') no-repeat center;
+    z-index: 10;
+}
+
+#loader h3,
+#loader h2 {
+    color: rgb(12, 163, 163);
+    position: absolute;
+}
+
+#loader h3 {
+    bottom: 15%;
+    left: 35%;
+}
+
+#loader h2 {
+    bottom: 10%;
+    left: 50%;
+}
+
+
+/* code for loader ends */
+
+
+/* code for scroll bar starts*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 5px;
+    display: none;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(0, 190, 190);
+    border-radius: 5px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(8, 114, 114);
+}
+
+
+/* code for scroll bar ends */
+
+::selection {
+    background-color: #414141;
+    color: #fffefe;
+}
+
+a,
+span {
+    text-decoration: none;
+    color: #fffefe;
+}
+
+hr.line {
+    width: 90%;
+    color: #fffefe;
+    border-width: 0 0 2px 0;
+}
+
+.opacity1 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.speed {
+    transition: 0.1s;
+}
+
+
+/*************************TOP-CONTAINER***********************************************/
+
+
+/*************************************** NAV-BAR**************************************/
+
+.top-container {
+    height: 100vh;
+    width: 100%;
+}
+
+.dropdownIcon {
+    display: none;
+}
+
+.nav-bar {
+    width: 100%;
+}
+
+.nav-bar ul {
+    overflow: hidden;
+    padding: 0%;
+    margin-top: 0%;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fffefe;
+    transition: 0.3s;
+}
+
+div.top-container1 div.nav-bar ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(46, 44, 44);
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+ul.dropdownmenu li {
+    padding: 10px;
+    float: left;
+    list-style: none;
+    font-size: 15px;
+    margin: 10px 5px 0 0px;
+}
+
+ul.dropdownmenu li.right {
+    float: right;
+    z-index: +2;
+}
+
+ul.dropdownmenu2 li {
+    display: none;
+}
+
+.logo {
+    z-index: +2;
+    margin: 15px 0 0 5px;
+    float: left;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: aquamarine;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    color: #fffefe;
+    transition: 0.3s;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.top-container1 .nav-bar ul .logo:hover {
+    color: rgb(46, 44, 44);
+    transition: 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    color: aquamarine;
+    transition: 0.3s;
+}
+
+div.top-container1 div.nav-bar ul li a:hover {
+    color: aquamarine;
+    transition: 0.3s;
+}
+
+
+/******************************FOOTER***************************************/
+
+.footer {
+    background-color: #2b2a2a;
+}
+
+.footer h3 {
+    margin-top: 0;
+    padding-top: 16px;
+}
+
+.footer ul {
+    width: 18%;
+    display: inline-block;
+    margin: 0 2% 2% 2%;
+}
+
+.logo-end {
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: aquamarine;
+    transition: 0.3s;
+}
+
+.logo-end:hover {
+    color: #fffefe;
+    transition: 0.3s;
+}
+
+.footer ul h2 {
+    color: aquamarine;
+    font-size: 20px;
+}
+
+.footer ul p {
+    color: #fffefe;
+    font-size: 14px;
+}
+
+.footer ul a {
+    display: block;
+    margin-top: 5%;
+}
+
+.footer ul input {
+    color: rgb(46, 44, 44);
+    font-size: 15px;
+    border-color: aquamarine;
+    border-width: 1.5px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 5px;
+    width: 90%;
+    box-sizing: content-box;
+    margin-top: 10px;
+}
+
+.footer ul button {
+    margin-top: 8%;
+    width: 50%;
+    padding: 8px 8px 8px 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: aquamarine;
+    border-color: aquamarine;
+    border-width: 1.5px;
+    font-size: 16px;
+    color: #3f3f3f;
+    transition: 0.3s;
+}
+
+.footer ul button:hover {
+    background-color: #fffefe;
+    transition: 0.3s;
+}
+
+.brand-icon a {
+    padding: 0 5px 5px 0;
+}
+
+.brand-icon a i.fa-angle-up {
+    background-color: aquamarine;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    float: right;
+    padding: 15px;
+    margin-right: 5%;
+    border: 2px solid aquamarine;
+    border-radius: 10%;
+}
+
+
+/***************************CENTRE*************************************/
+
+.center {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.center h1 {
+    font-weight: lighter;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #fffefe;
+}
+
+.center input {
+    color: rgb(46, 44, 44);
+    font-size: 20px;
+    border-color: aquamarine;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 5px;
+    width: 30%;
+    box-sizing: content-box;
+    margin-top: 20px;
+}
+
+
+/*************************MIDDLE-CONTAINER***********************************************/
+
+.middle-container {
+    text-align: center;
+    background-color: #fffefe;
+}
+
+.middle-container h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 0;
+    padding-top: 33px;
+}
+
+.col-4 {
+    width: 33.33%;
+    padding: 50px;
+}
+
+.row {
+    display: flex;
+}
+
+strong {
+    font-size: 20px;
+    font-family: 'Ubuntu', curisve;
+    font-weight: bold;
+}
+
+
+/********************************************Disclaimer*********************************/
+
+.disclaimer {
+    margin: 5% 18% 0 18%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+div.disclaimer h1 {
+    text-align: center;
+}
+
+
+/********************************Exams***********************************************/
+
+.middle-container1 {
+    display: flex;
+}
+
+.subinfo {
+    margin-top: 5px;
+    color: #646262;
+}
+
+.side-bar {
+    display: block;
+    top: 30%;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.side-bar a {
+    color: rgb(46, 44, 44);
+    display: block;
+    margin-left: 20%;
+    border-right: 2px solid #dad9d9;
+    border-bottom: 2px solid #dad9d9;
+    padding: 5% 5% 5% 5%;
+    width: 70%;
+    background-color: #fffefe;
+}
+
+.side-bar a:hover {
+    border-bottom: 3px solid aquamarine;
+}
+
+.main-content {
+    width: 57%;
+}
+
+.main-content div h2 {
+    margin-bottom: 2%;
+}
+
+.line2 {
+    background-color: aquamarine;
+    height: 2px;
+    border: aquamarine;
+    margin-top: 0%;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+div.content1 a.name {
+    text-align: center;
+    display: block;
+    border: 1px solid rgb(184, 184, 184);
+    margin: 2%;
+}
+
+div.content1 a.name img {
+    margin: 1%;
+}
+
+div.content1 a.name h2 {
+    color: black;
+    text-align: center;
+    margin: 0%;
+    transition: 0.3s;
+}
+
+div.content1 a.name:hover {
+    box-shadow: -1px -1px 10px 2px rgba(0, 0, 0, .15), 2px 2px 5px 2px rgb(155, 153, 153);
+    /* background-color: rgb(196, 195, 195); */
+    transition: 0.1s;
+}
+
+
+/* *******************************INSIDE-EXAMS************************************************ */
+
+div.main-content div.content1 div.intro h2 {
+    font-size: 300%;
+}
+
+.scroll {
+    padding-top: 8%;
+}
+
+.scroll p {
+    line-height: 30px;
+}
+
+.glance table {
+    width: 100%;
+    font-size: 80%;
+    font-weight: lighter;
+}
+
+.glance table tr th {
+    padding: 8px 20px;
+    text-align: left;
+}
+
+.glance table tr th a {
+    color: aqua;
+    font-size: 120%;
+    font-weight: bolder;
+}
+
+.glance table tr th a:hover {
+    text-decoration: underline;
+}
+
+.time-line {
+    margin-left: 20%;
+    width: 100%;
+    border-left: 5px solid aqua;
+    padding: 0 20px 0 50px;
+}
+
+div.time-line div {
+    background-color: #fff;
+    padding: 2%;
+    border: 1px solid aqua;
+    position: relative;
+    height: 100%;
+    margin-top: 2%;
+    width: 50%;
+}
+
+div.time-line div:before {
+    background-image: url();
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: aqua;
+    border: 5px solid #2b2a2a;
+    position: absolute;
+    top: 8x;
+    left: -74px;
+}
+
+div.time-line div:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: transparent aquamarine transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    left: -17px;
+    top: 30px;
+}
+
+div.time-line div h2,
+h4 {
+    margin: 2%;
+}
+
+h4 {
+    font-size: 90%;
+}
+
+.syllabus table {
+    width: 80%;
+    font-size: 130%;
+    font-weight: bolder;
+}
+
+.syllabus table tr td {
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.syllabus table tr td a {
+    color: #3f3f3f;
+    font-size: 75%;
+    font-weight: bolder;
+    background-color: aquamarine;
+    border: 2px solid aquamarine;
+    padding: 3%;
+    border-radius: 7px;
+}
+
+.syllabus table tr td a:hover {
+    background-color: #fffefe;
+    transition: 0.3s;
+}
+
+.syllabus table tr.syicon td i {
+    color: #f39233;
+    font-size: 250%;
+}
+
+div.pattern a.down {
+    color: #3f3f3f;
+    font-weight: bolder;
+    background-color: #f39233;
+    border: 2px solid #f39233;
+    padding: 1% 2% 1% 2%;
+    border-radius: 7px;
+}
+
+div.pattern a.down:hover {
+    background-color: #fffefe;
+    transition: 0.3s;
+}
+
+div.scroll h3 {
+    color: rgb(49, 199, 199);
+}
+
+ol.description li a {
+    color: #2b2a2a;
+}
+
+ol.description table tr th,
+ol.description table tr td {
+    border: 1px solid #2b2a2a;
+    padding: 2%;
+}
+
+ol.description table tr th {
+    font-family: 'Ubuntu', cursive;
+    font-weight: bold;
+    font-size: large;
+    color: #f39233;
+}
+
+.link-to-paper {
+    color: #2b2a2a;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid aqua;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fffbff;
+    transition: 0.3s;
+}
+
+.link-to-paper:hover {
+    background-color: aquamarine;
+    transition: 0.3s;
+}
+
+.dis {
+    display: none;
+}

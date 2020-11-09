@@ -1,0 +1,458 @@
+body,
+html {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffbff;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.not-allowed {
+    cursor: not-allowed;
+}
+
+.mouse {
+    cursor: default;
+}
+
+
+/* *********************************index********************************************** */
+
+div.top-nav,
+div.candidate_information {
+    font-size: 120%;
+}
+
+div.top-nav h1 {
+    background-color: rgb(0, 106, 206);
+    margin: 0;
+    color: #fff;
+    padding: 5px;
+}
+
+div.candidate_information {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.candidate_information div {
+    margin-left: 1%;
+}
+
+div.candidate_information div p,
+div.candidate_information div h5 {
+    margin: 0%;
+    color: #fff;
+    font-weight: lighter;
+}
+
+div.candidate_information div h1 {
+    margin: 2px;
+    color: rgb(251, 255, 0);
+    font-weight: lighter;
+}
+
+div.log-in {
+    border: 1px solid rgb(97, 95, 95);
+    width: 24%;
+    margin: 3% 38% 0 38%;
+    border-radius: 7px;
+    background-color: rgb(245, 245, 245);
+}
+
+div.login-top {
+    background-color: rgb(206, 202, 202);
+    margin-top: 0%;
+    padding: 2.5% 0 2% 4%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+div.Input {
+    margin-top: 4%;
+    text-align: center;
+}
+
+div.Input input {
+    margin-top: 4%;
+    width: 80%;
+    padding: 3%;
+    border-radius: 7px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(97, 95, 95);
+}
+
+div.sign-in {
+    text-align: center;
+    margin: 20% 0 10% 0%;
+}
+
+div.sign-in a {
+    color: #fffeff;
+    padding: 4% 35%;
+    border-radius: 7px;
+    text-decoration: none;
+    background-color: rgb(36, 129, 216);
+}
+
+div.sign-in a:hover {
+    background-color: rgb(0, 106, 206);
+}
+
+
+/* **********************************Instruction********************************* */
+
+div.instruction-start {
+    margin-left: 20px;
+    width: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+}
+
+div.instruction {
+    background-color: rgb(168, 227, 247);
+}
+
+div.instruction h2 {
+    margin: 0;
+    padding: 8px;
+    color: rgb(102, 102, 102);
+}
+
+div.top p {
+    margin: 4% 0 2% 0;
+    text-align: center;
+}
+
+.top p,
+.left p {
+    font-weight: bold;
+}
+
+.next {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    border-radius: 10px;
+    padding: 1%;
+    border: 2px solid black;
+}
+
+.next:hover {
+    background-color: rgb(0, 106, 206);
+    transition: 0.3s;
+}
+
+.next a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.Qpalette {
+    width: 90%;
+    border: 1px solid black;
+}
+
+.Qpalette tr th,
+.Qpalette tr td {
+    border: 1px solid black;
+}
+
+.design {
+    padding: 5px;
+}
+
+.design p {
+    width: 20px;
+    padding: 22%;
+}
+
+.notVisited p,
+.alternotVisited {
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: rgb(219, 218, 218);
+}
+
+.notAnswered p,
+.alternotAnswered {
+    border: 1px solid rgb(248, 6, 6);
+    border-radius: 3px 3px 50% 50%;
+    background-color: rgb(241, 67, 36);
+}
+
+.Answered p,
+.alterAnswered {
+    border: 1px solid rgb(102, 192, 18);
+    border-radius: 50% 50% 3px 3px;
+    background-color: rgb(122, 233, 19);
+}
+
+.Marked-for-Review p,
+.alterMarked {
+    border: 1px solid rgb(99, 0, 129);
+    border-radius: 50%;
+    background-color: rgb(151, 18, 192);
+}
+
+div div.button {
+    margin: 2%;
+    justify-content: space-between;
+}
+
+.button a {
+    border: 1px solid gray;
+    padding: 1%;
+    border-radius: 7px;
+}
+
+.previous {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.previous:hover {
+    background-color: rgb(0, 106, 206);
+    transition: 0.3s;
+}
+
+.start {
+    margin-left: 35%;
+    color: #fffeff;
+    padding: 4% 35%;
+    border-radius: 7px;
+    text-decoration: none;
+    background-color: rgb(36, 129, 216);
+}
+
+.start:hover {
+    background-color: rgb(0, 106, 206);
+}
+
+
+/* *****************************MAIN-PAGE******************************************************** */
+
+.BODY {
+    overflow-y: hidden;
+}
+
+
+/* MAIN-PAGE-LEFT START */
+
+div.top-Nav {
+    text-align: center;
+    background-color: gray;
+}
+
+div.top-Nav h2 {
+    margin: 0;
+    color: #fff;
+    padding: 5px;
+}
+
+.header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timerBox {
+    margin-right: 20px;
+}
+
+div.header div p {
+    margin-bottom: 0;
+}
+
+.line {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    color: gray;
+    border-width: 2px 0 0 0;
+}
+
+div.section li {
+    list-style: none;
+    display: inline;
+    padding: 1%;
+    margin-bottom: 1%;
+    border-right: 1px solid gray;
+}
+
+div.section li a {
+    text-decoration: none;
+    padding: 1% 0 1% 0;
+    color: rgb(105, 192, 221);
+    margin-bottom: 1%;
+}
+
+.BGC1 {
+    background-color: rgb(105, 192, 221);
+}
+
+.bgc {
+    background-color: rgb(105, 192, 221);
+}
+
+.fontcolor {
+    color: #fff;
+}
+
+.blank {
+    background-color: rgb(105, 192, 221);
+}
+
+.blank p {
+    margin: 0%;
+    padding: 1%;
+    color: #fffeff;
+}
+
+p.questionNo {
+    border: 0.1px solid rgb(158, 157, 157);
+    padding: 3px;
+    margin: 1px;
+}
+
+#Question {
+    padding: 2px;
+    border: 1px solid black;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-left: 2px;
+}
+
+.Footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer div {
+    margin: 1%;
+}
+
+.Footer div.btn-left button {
+    font-size: 15px;
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 3px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.Footer div.btn-left button:hover {
+    background-color: rgb(22, 147, 189);
+    color: #fffbff;
+    border-color: black;
+}
+
+.Footer div.btn-right button,
+.Foote div.btn-right button {
+    font-size: 15px;
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 3px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(22, 147, 189);
+    color: #fffbff;
+}
+
+.Footer div.btn-right button:hover,
+.Foote div.btn-right button:hover {
+    border-color: black;
+}
+
+
+/* MAIN-PAGE-LEFT END */
+
+
+/* MAIN-PAGE-RIGHT START */
+
+div.links {
+    padding: 5px 0 5px 0;
+}
+
+div.links a {
+    margin: 20px;
+    text-decoration: none;
+    color: #fffbff;
+}
+
+div.links a:hover {
+    text-decoration: underline;
+}
+
+div.questioninfo {
+    border: 2px solid;
+}
+
+div.quesType {
+    background-color: #fffbff;
+}
+
+div.quesType table tr th {
+    font-weight: lighter;
+}
+
+div.questionNo h3 {
+    padding: 10px;
+    color: #fffbff;
+    margin: 0;
+}
+
+div.quesPalette p {
+    margin: 0;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 90%;
+}
+
+button.btnques {
+    width: 20%;
+    padding: 4%;
+    margin: 0 0 10px 10px;
+    font-size: 20px;
+}
+
+.opacity {
+    display: none;
+}
+
+
+/* MAIN-PAGE-RIGHT END */
+
+div.keypadClick div {
+    width: 90px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(234, 236, 243);
+}
+
+.keypad button {
+    padding: 7px;
+    margin: 1px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+div.keypadClick {
+    margin-left: 5%;
+}
+
+button.green:hover {
+    background-color: rgb(9, 139, 9);
+}
+
+.keypad button.no:hover {
+    background-color: rgb(205, 205, 255);
+}

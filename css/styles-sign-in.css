@@ -1,0 +1,184 @@
+/**********************Default**********************************/
+
+html {
+    height: 100%;
+    background-color: aquamarine;
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: bolder;
+}
+
+
+/**********************Container**********************************/
+
+.left-top {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e3e3e3;
+}
+
+
+/******************typing*********************************/
+
+body {
+    background-color: #e3e3e3;
+    text-align: left;
+    color: #393e46;
+    padding-top: 10em;
+}
+
+div.left-top h1 {
+    color: #393e46;
+    text-decoration: none;
+    margin-top: 40%;
+    text-align: center;
+}
+
+div.left-top h1 a {
+    color: #393e46;
+    text-decoration: none;
+    font-size: 40px;
+    border-right: #393e46;
+}
+
+.wave {
+    position: fixed;
+    margin-top: 32%;
+    border: none;
+    left: 0;
+    padding: 0%;
+    margin-bottom: 0;
+}
+
+
+/******************typing*********************************/
+
+.right-top {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+
+/********************Logo****************************/
+
+.logo {
+    margin-top: 100px;
+    position: relative;
+    left: 35%;
+    width: fit-content;
+}
+
+div img {
+    border: solid;
+    border-color: aquamarine greenyellow greenyellow aquamarine;
+    border-radius: 10px;
+    border-width: 1.5px;
+    padding: 5px;
+}
+
+div.message {
+    width: 75%;
+    margin-left: 15%;
+}
+
+div.message p {
+    color: rgb(61, 57, 57);
+    line-height: 0.5;
+}
+
+
+/********************Log-in********************************/
+
+.log-in {
+    position: relative;
+    left: 25%;
+    margin-top: 50px;
+}
+
+div input {
+    margin: 10px;
+    border-width: 1px;
+    border-color: grey;
+    padding: 11px;
+    width: 40%;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #393e46;
+}
+
+div input::placeholder {
+    color: grey;
+    font-size: 20px;
+    font-size: medium;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+div button.button-submit {
+    margin-top: 20px;
+    height: 50px;
+    width: 35%;
+    margin-left: 6.5%;
+    border: solid #ffffff 1px;
+    background: #00d1ff;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#myButton {
+    background-color: #ffffff;
+    color: #00d1ff;
+    border: solid #00d1ff 1px;
+}
+
+div button.button-submit:hover {
+    box-shadow: 1px 1px 10px 0px #000000;
+    color: #00d1ff;
+    background-color: #ffffff;
+}
+
+
+/*************************Forgot-password**************************************/
+
+div.forgot {
+    margin-top: 20px;
+    margin-left: 33%;
+    width: 50%;
+}
+
+div.forgot a {
+    color: #00d1ff;
+    text-decoration: none;
+}
+
+div.forgot a:hover {
+    color: #3d94f6;
+}
+
+div.forgot p {
+    line-height: 4;
+    display: inline;
+    color: #393e46;
+}
+
+
+/**********************query*****************************/
+
+div.query p {
+    color: rgb(51, 50, 50);
+    line-height: 0.5;
+    font-size: smaller;
+}
