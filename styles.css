@@ -7,7 +7,6 @@ body {
     margin-top: 0;
 }
 
-
 /* code for loader starts */
 
 #loader {
@@ -34,9 +33,7 @@ body {
     left: 50%;
 }
 
-
 /* code for loader ends */
-
 
 /* code for scroll bar starts*/
 
@@ -58,7 +55,6 @@ body {
  ::-webkit-scrollbar-thumb:hover {
     background: rgb(8, 114, 114);
 }
-
 
 /* code for scroll bar ends */
 
@@ -88,9 +84,7 @@ hr.line {
     transition: 0.1s;
 }
 
-
 /*************************TOP-CONTAINER***********************************************/
-
 
 /*************************************** NAV-BAR**************************************/
 
@@ -146,7 +140,7 @@ ul.dropdownmenu2 li {
 
 .logo {
     z-index: +2;
-    margin: 15px 0 0 5px;
+    margin: 15px 75px 0 5px;
     float: left;
     font-style: normal;
     font-size: 25px;
@@ -179,7 +173,6 @@ div.top-container1 div.nav-bar ul li a:hover {
     color: aquamarine;
     transition: 0.3s;
 }
-
 
 /******************************FOOTER***************************************/
 
@@ -273,7 +266,6 @@ div.top-container1 div.nav-bar ul li a:hover {
     border-radius: 10%;
 }
 
-
 /***************************CENTRE*************************************/
 
 .center {
@@ -299,7 +291,6 @@ div.top-container1 div.nav-bar ul li a:hover {
     box-sizing: content-box;
     margin-top: 20px;
 }
-
 
 /*************************MIDDLE-CONTAINER***********************************************/
 
@@ -330,7 +321,6 @@ strong {
     font-weight: bold;
 }
 
-
 /********************************************Disclaimer*********************************/
 
 .disclaimer {
@@ -342,7 +332,6 @@ strong {
 div.disclaimer h1 {
     text-align: center;
 }
-
 
 /********************************Exams***********************************************/
 
@@ -418,7 +407,6 @@ div.content1 a.name:hover {
     /* background-color: rgb(196, 195, 195); */
     transition: 0.1s;
 }
-
 
 /* *******************************INSIDE-EXAMS************************************************ */
 
